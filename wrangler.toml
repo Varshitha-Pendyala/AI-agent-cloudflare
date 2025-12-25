@@ -1,0 +1,21 @@
+name = "ai-chatbot"
+main = "worker.js"
+compatibility_date = "2024-12-24"
+
+# Workers AI binding
+[ai]
+binding = "AI"
+
+# KV namespace binding
+[[kv_namespaces]]
+binding = "KV"
+id = "your-kv-namespace-id"  # Get this from Cloudflare dashboard
+```
+
+#### 3. **.gitignore**
+```
+node_modules/
+.wrangler/
+.dev.vars
+.env
+dist/
